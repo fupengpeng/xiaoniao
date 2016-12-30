@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            /*音乐播放*/
+           var musicIndex = 0;
+           $(".music").find("span").click(function () {
+               musicIndex++;
+              index = $(this).index();
+              $("body").append('<embed class="myaudio'+musicIndex+'" src="music/sound0'+index+'.mp3" autostart="" loop="false" hidden="true">');
+              var removeIndex = musicIndex;
+              setTimeout(function () {/*延时器，用于清除属性*/
+                  $(".myaudio"+musicIndex).remove();
+              },3000);
+           });
+           /*备案声明点击打开查询网站*/
+           $("#shengming").click(function () {
+               window.open("http://www.miitbeian.gov.cn")
+           })
+        });
+    </script>
+</head>
+<body>
+<div class="foot_wrap">
+    <div class="foot">
+        <div class="music">
+            <span class="dou"></span>
+            <span class="lai"></span>
+            <span class="mi"></span>
+            <span class="fa"></span>
+            <span class="suo"></span>
+            <span class="la"></span>
+            <span class="xi"></span>
+        </div>
+        <div class="shenming" id="shengming">蜀ICP备16002451号</div>
+    </div>
+</div>
+</body>
+</html>

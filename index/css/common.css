@@ -1,0 +1,89 @@
+@charset "utf-8";/*声明编码格式*/
+/* 公共 */
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    border:none;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;/*a标签连接  点击时显示小手*/
+}
+ul li{
+    list-style:none;/*去除列表的样式*/
+}
+body{
+    font-family:STKaiti, KaiTi_GB2312, "楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    background:#f1f2f6;
+}
+
+.fixex_tip{
+    width:87px;
+    height:161px;
+    position: fixed;
+    bottom:160px;
+    right: 40px;
+    display: none;
+}
+.scroll_top{
+    width:50px;
+    height:50px;
+    background: url("../images/scroll_top_bg.png") no-repeat;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-bottom: 24px;
+}
+.scroll_top:hover{
+    background-position: 0 -50px;
+    text-replace:all 0.3s ease 0s;
+}
+.fixe_contactus{
+    width:87px;
+    height:87px;
+    position: absolute;
+    right:0;
+    top:74px;
+    background:url(../images/fixed_contactus.png)top right no-repeat;
+    cursor:pointer;
+}
+
+@keyframes su-pudding {
+    0%{
+        transform: scale(1,1);
+    }
+    10%{
+        transform: scale(1.1,0.9);
+    }
+    20%{
+        transform: scale(1.2,0.8);
+    }
+
+    30%{
+        transform: scale(1.3,0.7);
+    }
+
+    40%{
+        transform: scale(1.2,0.8);
+    }
+    50%{
+        transform: scale(1.1,0.9);
+    }
+    60%{
+        transform: scale(1,1);
+    }
+    70%{
+        transform:scale(1.1,0.9);
+    }
+    80%{
+        transform: scale(1.2,0.8);
+    }
+    90%{
+        transform:scale(1.1,0.9);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}

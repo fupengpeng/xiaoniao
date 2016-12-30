@@ -1,0 +1,89 @@
+
+/*头部*/
+.header_wrap{
+    height:120px;
+    min-width:1100px;/*w3c 查询*/
+    background: #cccccc url("../images/header_bg.jpg") top center;/*颜色  路径  位置*/
+}
+/*头部盒子*/
+.header_wrap .header{
+    height:120px;
+    width:1100px;
+    margin:0 auto;
+}
+/*头部盒子logo*/
+.header .logo{
+    float: left;
+}
+/*头部盒子导航*/
+.header .nav{
+    width:630px;/*630*/
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    margin:0 auto;
+    float: right;
+    margin-top: 45px;
+}
+/*导航盒子*/
+.header .nav .nav_piece{
+    /*记得给父标签定位,否则子标签的绝对定位不会生效*/
+    position: relative;
+    float: left;
+    color: #fff;
+}
+/*导航盒子的标题*/
+.header .nav .nav_piece h1{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    height:35px;
+    cursor: pointer;
+    padding:0 15px;
+}
+/*箭头设置*/
+.header .nav .nav_piece h1 .xiaojiantou_img{
+    display: block;
+    width: 25px;
+    height:25px;
+    background: url("../images/nav_xiajiantou.png") no-repeat;
+    position: absolute;
+    top:0;
+    right:14px;
+}
+.header .nav .has_downav h1{
+    padding:0 40px 0 15px;
+}
+.header .nav .has_downav ul{
+    font-size: 15px;
+    width:170px;
+    background: #36254f;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top:36px;
+    left:-31px;
+    padding-bottom: 20px;
+    display: none;
+    z-index: 998;/**/
+}
+.header .nav .has_downav ul li{
+    text-align: left;
+    padding-left: 30px;
+    line-height: 30px;
+    transition: padding-left 0.4s ease 0s;
+}
+.header .nav .has_downav ul li:hover{
+    color: #ffffff;
+    padding-left: 40px;
+    transition: padding-left 0.4s ease 0s;
+    background: #3498db url("../images/nav_li_bg.png") no-repeat 160px 12px;
+}
+.header .nav .nav_piece h1:hover{
+    background: url("../images/nav_now_bg.png") no-repeat bottom center;
+}
+/*实现首页的标题默认圆点存在*/
+.now h1{
+    background: url("../images/nav_now_bg.png") no-repeat bottom center;
+}
+
